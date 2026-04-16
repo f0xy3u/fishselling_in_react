@@ -16,26 +16,26 @@ export function HomePage() {
       <section className="mx-auto flex max-w-7xl flex-col gap-16 overflow-hidden px-6 pb-24 pt-12 md:flex-row md:items-center md:px-8 md:py-32">
         <div className="w-full md:w-1/2">
           <span className="mb-6 inline-flex rounded-full bg-[#6ff7ee] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.24em] text-[#00201e]">
-            Direct from Source
+            Přímo z moře
           </span>
           <h1 className="mb-8 text-5xl font-black leading-[1.05] tracking-tight text-[#161d1c] md:text-7xl">
-            Fresh from the <span className="italic text-[#006a65]">Net</span> to Your Door.
+            Čerstvý ze <span className="italic text-[#006a65]">sítě</span> přímo k vaším dveřím.
           </h1>
           <p className="mb-10 max-w-md text-lg leading-relaxed text-[#3c4948]">
-            Experience the ocean&apos;s finest bounty, sustainably harvested and delivered within 24 hours of catch.
+            Zažijte chuť oceánu, udržitelně sklizené a doručeného během 24 hodin po chycení.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
               href="#shop"
               className="inline-flex rounded-full bg-gradient-to-br from-[#006a65] to-[#00b5ad] px-10 py-4 font-bold text-white shadow-lg shadow-[#006a65]/20 transition active:scale-95"
             >
-              Shop Today&apos;s Catch
+              Nakupuj dnešní úlovek
             </a>
             <Link
               to="/about"
               className="inline-flex rounded-full bg-[#fe7e4f] px-10 py-4 font-bold text-[#6b1f00] transition hover:brightness-110 active:scale-95"
             >
-              Our Story
+              Náš příběh
             </Link>
           </div>
         </div>
@@ -64,19 +64,19 @@ export function HomePage() {
         <div className="mx-auto max-w-7xl px-6 md:px-8">
           <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div>
-              <h2 className="mb-4 text-3xl font-black tracking-tight md:text-5xl">The Daily Catch</h2>
-              <p className="max-w-md text-[#3c4948]">Hand-selected by our experts this morning. Limited quantities available.</p>
+              <h2 className="mb-4 text-3xl font-black tracking-tight md:text-5xl">Dnešní úlovek</h2>
+              <p className="max-w-md text-[#3c4948]">Ručně vybrané našimi odborníky každé ráno. Omezené množství k dispozici.</p>
             </div>
 
             <div className="flex gap-2" role="tablist" aria-label="Product category filter">
               <FilterButton active={filter === 'all'} onClick={() => setFilter('all')}>
-                All
+                Vše
               </FilterButton>
               <FilterButton active={filter === 'fish'} onClick={() => setFilter('fish')}>
-                Fish
+                Ryby
               </FilterButton>
               <FilterButton active={filter === 'shellfish'} onClick={() => setFilter('shellfish')}>
-                Shellfish
+                Mušle 
               </FilterButton>
             </div>
           </div>
@@ -95,9 +95,9 @@ export function HomePage() {
             <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#006a65] to-[#00b5ad]">
               <span className="material-symbols-outlined text-3xl text-white">mail</span>
             </div>
-            <h2 className="mb-4 text-3xl font-black tracking-tight md:text-4xl">Stay in the Current</h2>
+            <h2 className="mb-4 text-3xl font-black tracking-tight md:text-4xl">Zůstej v obraze</h2>
             <p className="mb-8 leading-relaxed text-[#3c4948]">
-              Get weekly catch updates, seasonal recipes, and exclusive offers delivered straight to your inbox.
+              Buďte první, kdo bude mít informace o nejnovějších úlovech a speciálních nabídkách.
             </p>
             <NewsletterForm />
           </div>

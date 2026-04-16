@@ -6,7 +6,7 @@ export function AboutPage() {
       <section className="mx-auto flex max-w-7xl flex-col gap-16 px-6 py-16 md:flex-row md:items-center md:px-8 md:py-24">
         <div className="w-full md:w-1/2">
           <h1 className="mb-6 text-5xl font-black leading-tight tracking-tight md:text-6xl">
-            Respecting the <span className="italic text-[#006a65]">Ocean</span> for Generations
+            Zachováváme <span className="italic text-[#006a65]">OCEÁN </span> pro budoucí generace
           </h1>
           <p className="mb-8 text-lg leading-relaxed text-[#3c4948]">
             At Fin & Gill, we believe that the best seafood comes from those who treat the water with respect. We bypass the
