@@ -27,7 +27,7 @@ export function AboutPage() {
           <div className="relative aspect-square overflow-hidden rounded-3xl shadow-2xl shadow-black/10">
             <div className="absolute inset-x-0 bottom-0 top-1/2 z-10 bg-gradient-to-t from-black/60 to-transparent" />
             <img
-              src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80"
+              src="https://ibb.co/6c09cFxF"
               alt="Fisherman standing on a dock with nets"
               className="h-full w-full object-cover object-top"
             />
