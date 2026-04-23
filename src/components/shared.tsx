@@ -52,7 +52,7 @@ export function ProductCard({ product, onAdd }: { product: Product; onAdd: (prod
         <button
           type="button"
           className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#fe7e4f] text-[#6b1f00] transition hover:scale-110 active:scale-95"
-          aria-label={`Add ${product.name} to cart`}
+          aria-label={`Přidat ${product.name} do košíku`}
           onClick={() => onAdd(product)}
         >
           <span className="material-symbols-outlined">add_shopping_cart</span>
@@ -76,16 +76,16 @@ export function NewsletterForm() {
     setSuccess('')
 
     if (!trimmed) {
-      setError('Please enter your email address.')
+      setError('Zadejte prosím e-mailovou adresu.')
       return
     }
 
     if (!emailRegex.test(trimmed)) {
-      setError('Please enter a valid email address.')
+      setError('Zadejte prosím platnou e-mailovou adresu.')
       return
     }
 
-    setSuccess(`Welcome aboard! We'll send updates to ${trimmed}.`)
+    setSuccess(`Vítejte na palubě. Novinky budeme posílat na ${trimmed}.`)
     setEmail('')
   }
 
@@ -93,12 +93,12 @@ export function NewsletterForm() {
     <form className="flex flex-col gap-4 sm:flex-row" onSubmit={submitForm} noValidate>
       <div className="flex-1 text-left">
         <label htmlFor="email-input" className="sr-only">
-          Email address
+          E-mailová adresa
         </label>
         <input
           id="email-input"
           type="email"
-          placeholder="your@email.com"
+          placeholder="vas@email.cz"
           autoComplete="email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
@@ -110,7 +110,7 @@ export function NewsletterForm() {
         type="submit"
         className="whitespace-nowrap rounded-full bg-gradient-to-br from-[#006a65] to-[#00b5ad] px-8 py-4 font-bold text-white shadow-lg shadow-[#006a65]/20 transition active:scale-95"
       >
-        Subscribe
+        Odebírat
       </button>
       {success ? <p className="sm:col-span-2 text-left font-bold text-[#006a65]">{success}</p> : null}
     </form>

@@ -66,12 +66,12 @@ export function SiteLayout() {
       return [...current, { ...product, qty: 1 }]
     })
 
-    setToast(`${product.name} added to cart`)
+    setToast(`${product.name} byl přidán do košíku`)
   }
 
   const removeFromCart = (name: string) => {
     setCart((current) => current.filter((item) => item.name !== name))
-    setToast(`${name} removed from cart`)
+    setToast(`${name} byl odebrán z košíku`)
   }
 
   const outletContext: SiteContext = { addToCart }
@@ -82,7 +82,7 @@ export function SiteLayout() {
         href="#main-content"
         className="absolute left-4 top-0 z-[60] -translate-y-full rounded-b-xl bg-[#006a65] px-5 py-3 text-sm font-bold text-white transition-transform focus:translate-y-0"
       >
-        Skip to main content
+        Přeskočit na hlavní obsah
       </a>
 
       <header className="sticky top-0 z-50 border-b border-white/40 bg-[#ecfdf5]/80 backdrop-blur-xl">
@@ -91,18 +91,18 @@ export function SiteLayout() {
             Fin & Gill
           </Link>
 
-          <nav className="hidden items-center gap-8 md:flex" aria-label="Main navigation">
+          <nav className="hidden items-center gap-8 md:flex" aria-label="Hlavní navigace">
             <NavLink to="/" end className={navClass}>
-              Shop
+              Obchod
             </NavLink>
             <NavLink to="/recipes" className={navClass}>
-              Recipes
+              Recepty
             </NavLink>
             <NavLink to="/about" className={navClass}>
-              About Our Fishermen
+              O našich rybářích
             </NavLink>
             <a href="/#newsletter" className={linkClass}>
-              Newsletter
+              Novinky
             </a>
           </nav>
 
@@ -110,7 +110,7 @@ export function SiteLayout() {
             <button
               type="button"
               className="relative rounded-full p-2 text-[#0f766e] transition hover:bg-[#6ff7ee]/25 active:scale-95"
-              aria-label="Open shopping cart"
+              aria-label="Otevřít nákupní košík"
               onClick={() => setCartOpen(true)}
             >
               <span className="material-symbols-outlined">shopping_cart</span>
@@ -124,7 +124,7 @@ export function SiteLayout() {
             <button
               type="button"
               className="rounded-full p-2 text-[#0f766e] transition hover:bg-[#6ff7ee]/25 active:scale-95"
-              aria-label="Account"
+              aria-label="Účet"
             >
               <span className="material-symbols-outlined">account_circle</span>
             </button>
@@ -132,7 +132,7 @@ export function SiteLayout() {
             <button
               type="button"
               className="rounded-full p-2 text-[#0f766e] transition hover:bg-[#6ff7ee]/25 active:scale-95 md:hidden"
-              aria-label="Open navigation menu"
+              aria-label="Otevřít navigační menu"
               aria-expanded={mobileOpen}
               aria-controls="mobile-menu"
               onClick={() => setMobileOpen((current) => !current)}
@@ -148,16 +148,16 @@ export function SiteLayout() {
         >
           <div className="flex flex-col gap-1 rounded-2xl bg-white p-4 shadow-lg shadow-black/5">
             <NavLink to="/" end className={mobileNavClass}>
-              Shop
+              Obchod
             </NavLink>
             <NavLink to="/recipes" className={mobileNavClass}>
-              Recipes
+              Recepty
             </NavLink>
             <NavLink to="/about" className={mobileNavClass}>
-              About Our Fishermen
+              O našich rybářích
             </NavLink>
             <a href="/#newsletter" className={mobileLinkClass} onClick={() => setMobileOpen(false)}>
-              Newsletter
+              Novinky
             </a>
           </div>
         </div>
@@ -170,21 +170,21 @@ export function SiteLayout() {
       <footer className="mt-20 rounded-t-[3rem] bg-[#d9f99d]">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-8 py-16 text-center md:flex-row md:px-12 md:text-left">
           <div className="text-xl font-bold text-[#134e4a]">Fin & Gill</div>
-          <nav className="flex flex-wrap justify-center gap-8" aria-label="Footer navigation">
+          <nav className="flex flex-wrap justify-center gap-8" aria-label="Navigace v patičce">
             <Link to="/about" className={footerLinkClass}>
-              Sustainability
+              Udržitelnost
             </Link>
             <a href="#" className={footerLinkClass}>
-              Shipping
+              Doprava
             </a>
             <a href="/#newsletter" className={footerLinkClass}>
-              Contact
+              Kontakt
             </a>
             <a href="#" className={footerLinkClass}>
-              Terms
+              Podmínky
             </a>
           </nav>
-          <div className="text-xs uppercase tracking-[0.24em] text-[#0f766e]">© 2025 Fin & Gill. Sustainably Sourced.</div>
+          <div className="text-xs uppercase tracking-[0.24em] text-[#0f766e]">© 2025 Fin & Gill. Udržitelný původ.</div>
         </div>
       </footer>
 
@@ -198,14 +198,14 @@ export function SiteLayout() {
         className={`${cartOpen ? 'translate-x-0' : 'translate-x-full'} fixed right-0 top-0 z-50 flex h-full w-full max-w-md flex-col bg-white shadow-2xl shadow-black/20 transition-transform duration-300`}
         role="dialog"
         aria-modal="true"
-        aria-label="Shopping cart"
+        aria-label="Nákupní košík"
       >
         <div className="flex items-center justify-between border-b border-black/5 px-8 py-6">
-          <h2 className="text-xl font-bold">Your Cart</h2>
+          <h2 className="text-xl font-bold">Váš košík</h2>
           <button
             type="button"
             className="rounded-full p-2 text-[#3c4948] transition hover:bg-[#e3e9e8]"
-            aria-label="Close cart"
+            aria-label="Zavřít košík"
             onClick={() => setCartOpen(false)}
           >
             <span className="material-symbols-outlined">close</span>
@@ -214,7 +214,7 @@ export function SiteLayout() {
 
         <div className="flex-1 overflow-y-auto px-8 py-6">
           {cart.length === 0 ? (
-            <p className="py-12 text-center text-[#3c4948]">Your cart is empty. Start shopping!</p>
+            <p className="py-12 text-center text-[#3c4948]">Váš košík je prázdný. Začněte nakupovat.</p>
           ) : (
             <div className="space-y-4">
               {cart.map((item) => (
@@ -232,7 +232,7 @@ export function SiteLayout() {
                     <button
                       type="button"
                       className="rounded-full p-2 text-[#3c4948] transition hover:bg-[#ffdad6] hover:text-[#ba1a1a]"
-                      aria-label={`Remove ${item.name} from cart`}
+                      aria-label={`Odebrat ${item.name} z košíku`}
                       onClick={() => removeFromCart(item.name)}
                     >
                       <span className="material-symbols-outlined text-sm">delete</span>
@@ -246,14 +246,14 @@ export function SiteLayout() {
 
         <div className={`${cart.length === 0 ? 'hidden' : 'block'} border-t border-black/5 px-8 py-6`}>
           <div className="mb-6 flex items-center justify-between">
-            <span className="font-medium text-[#3c4948]">Total</span>
+            <span className="font-medium text-[#3c4948]">Celkem</span>
             <span className="text-2xl font-black text-[#006a65]">${cartTotal.toFixed(2)}</span>
           </div>
           <button
             type="button"
             className="w-full rounded-full bg-gradient-to-br from-[#006a65] to-[#00b5ad] px-8 py-4 font-bold text-white shadow-lg shadow-[#006a65]/20 transition active:scale-95"
           >
-            Checkout
+            Pokračovat k pokladně
           </button>
         </div>
       </aside>

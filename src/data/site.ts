@@ -21,8 +21,8 @@ export type Recipe = {
 
 export const products: Product[] = [
   {
-    name: 'Wild-Caught King Salmon',
-    description: 'Pristine waters of the Pacific Northwest',
+    name: 'Divoký královský losos',
+    description: 'Z křišťálově čistých vod severozápadního Pacifiku',
     price: 32,
     unit: '/ lb',
     category: 'fish',
@@ -31,8 +31,8 @@ export const products: Product[] = [
     size: 'wide',
   },
   {
-    name: 'Atlantic Blue Oysters',
-    description: 'Salty, clean finish',
+    name: 'Atlantské modré ústřice',
+    description: 'Slaná, čistá dochuť',
     price: 18,
     unit: '/ doz',
     category: 'shellfish',
@@ -41,8 +41,8 @@ export const products: Product[] = [
     size: 'small',
   },
   {
-    name: 'Local Gulf Shrimp',
-    description: 'Sweet and firm texture',
+    name: 'Místní krevety z Mexického zálivu',
+    description: 'Sladká chuť a pevná textura',
     price: 24,
     unit: '/ lb',
     category: 'shellfish',
@@ -51,8 +51,8 @@ export const products: Product[] = [
     size: 'small',
   },
   {
-    name: 'Sea Scallops',
-    description: 'Diver-caught, exceptionally sweet',
+    name: 'Mořské mušle svatého Jakuba',
+    description: 'Ruční sběr potápěči, výjimečně sladké',
     price: 28,
     unit: '/ lb',
     category: 'shellfish',
@@ -64,26 +64,26 @@ export const products: Product[] = [
 
 export const recipes: Recipe[] = [
   {
-    title: 'Herb-Crusted King Salmon',
+    title: 'Královský losos v bylinkové krustě',
     time: '15 min',
     description:
-      'Simple herb crust with dill, parsley and a squeeze of fresh lemon. Perfect for a quick, healthy weeknight dinner.',
+      'Jednoduchá bylinková krusta s koprem, petrželí a šťávou z čerstvého citronu. Ideální pro rychlou a zdravou večeři během týdne.',
     image:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAANXeFa2wQ5iT1jQL3scYY-0GMvFwuBtc5ZXX_PCRG94jBIF8eZCkkjuhRGFUTcV8SNBTfn8EIPjk1yhf7uj-MyCEBltg26L_w6qoCKsxmvLE1CPiVMDoynzjTGYRb0RrE19go3he15VWjgNzi0xhh7KvFNXx-B1vS8Mw3N4dH_yZ3PCoygdhDFSDiNlT9lewZWkpLQWlEiAOJLNuIbB9CbgsQrc_rynAtucC3XF-wswzBiVQORPj5l1N23NIdeJhFoBS5mq2ctYk',
   },
   {
-    title: 'Garlic Butter Gulf Shrimp',
+    title: 'Krevety zálivu na česnekovém másle',
     time: '10 min',
     description:
-      'Succulent shrimp sauteed in garlic butter with a splash of white wine and fresh parsley. Serve over pasta or rice.',
+      'Šťavnaté krevety restované na česnekovém másle s kapkou bílého vína a čerstvou petrželí. Podávejte s těstovinami nebo rýží.',
     image:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCHqLUrFvAUZvksZPlv77O5fMaEVrI467PbbGOMsz9_s6NyI8VyC5n_YSHNrYonM5L_cUxPcrrpjkQAipfkjpBA-G6DbONI5o-ZNDw8cx1_g200R048BBoPo34QZp_U-A8OtOXx-DoK8Ez6r8l9QxGyHcGN6LcgB1cSF5MB3DPLdr41rjYVzs0LQUQtMrVjJ3uA9qE5ousQ8UH6J0Ri6EXmO5wFUf3i1XezEixWcMPp2CDpyfS2TTBn2_Hmy5hnpQxM4Va9L8ExFsk',
   },
   {
-    title: 'Pan-Seared Scallops',
+    title: 'Mušle svatého Jakuba opečené na pánvi',
     time: '20 min',
     description:
-      'Golden-crusted, buttery scallops served on a bed of sweet pea puree. An elegant appetizer or light main course.',
+      'Dozlatova opečené mušle na másle podávané na jemném hráškovém pyré. Elegantní předkrm nebo lehký hlavní chod.',
     image:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuC2_qFBRUvkvbWCyXWbvmkTqvMquSMcLUX1fOShh0f0Wtsnz4m1DEQeSC_5uM83U_07TgdZiXOc9sAo2lZNwsQEiq4zXq8Pf4V1KutnjrIOMSjeSs6AGEFXSE7VYyC4fhGY8TrrmIO86N0uvhH55ymrcQ2JP7Igxn5lelNSTy_7X2ZUDKqg74U9MtyP2A_0BMw1ZEFSiibkQx5ieIszpI2HGjHTyJCK0k-4cV8bP-hwJ_xw-xpl7GFLys1shj4LglK9Ptkkc47Gcpk',
   },

@@ -5,10 +5,10 @@ export function RecipesPage() {
     <main className="mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-24">
       <div className="mb-16 text-center">
         <h1 className="mb-6 text-5xl font-black tracking-tight md:text-6xl">
-          Our Favorite <span className="italic text-[#006a65]">Recipes</span>
+          Naše oblíbené <span className="italic text-[#006a65]">recepty</span>
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-[#3c4948]">
-          Learn how to prepare your fresh catch with these simple, chef-approved recipes that let the natural flavor of the seafood shine.
+          Naučte se připravit čerstvý úlovek podle jednoduchých receptů doporučených šéfkuchaři, které nechají vyniknout přirozenou chuť mořských plodů.
         </p>
       </div>
 
@@ -32,7 +32,7 @@ export function RecipesPage() {
               <h2 className="mb-3 text-2xl font-bold">{recipe.title}</h2>
               <p className="mb-6 text-sm leading-relaxed text-[#3c4948]">{recipe.description}</p>
               <a href="#" className="inline-flex items-center gap-2 font-bold text-[#006a65] transition-colors hover:text-[#a43c12]">
-                Read Recipe <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                Zobrazit recept <span className="material-symbols-outlined text-sm">arrow_forward</span>
               </a>
             </div>
           </article>
