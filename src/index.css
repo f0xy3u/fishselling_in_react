@@ -2,14 +2,18 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer base {
-  html {
-    @apply bg-[#f4fbf9] dark:bg-gray-950;
-  }
-  
   button, 
   [role="button"] {
     @apply cursor-pointer;
   }
+}
+
+html {
+  background-color: #f4fbf9;
+}
+
+html.dark {
+  background-color: #030712; /* Tailwind gray-950 */
 }
 
 :root {
