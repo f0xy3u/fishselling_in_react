@@ -4,34 +4,34 @@ export function AboutPage() {
   return (
     <>
       <section className="mx-auto flex max-w-7xl flex-col gap-16 px-6 py-16 md:flex-row md:items-center md:px-8 md:py-24">
-        <div className="w-full md:w-1/2">
-          <h1 className="mb-6 text-5xl font-black leading-tight tracking-tight md:text-6xl">
-            Zachováváme <span className="italic text-[#006a65]">OCEÁN </span> pro budoucí generace
+        <div className="w-full md:w-1/2" data-aos="fade-right">
+          <h1 className="mb-6 text-5xl font-black leading-tight tracking-tight dark:text-white md:text-6xl transition-colors">
+            Zachováváme <span className="italic text-[#006a65] dark:text-[#6ff7ee]">OCEÁN </span> pro budoucí generace
           </h1>
-          <p className="mb-8 text-lg leading-relaxed text-[#3c4948]">
+          <p className="mb-8 text-lg leading-relaxed text-[#3c4948] dark:text-gray-300 transition-colors">
             U Fin & Gill, věříme, že nejlepší mořské plody pocházejí od těch, kteří ohleduplně nakládají s vodou. Obcházíme
             masivní obchodní operace a partneríme výhradně s nezávislými, generačními rybáři, kteří používají udržitelné
             metody sběru.
           </p>
-          <p className="mb-8 text-lg leading-relaxed text-[#3c4948]">
+          <p className="mb-8 text-lg leading-relaxed text-[#3c4948] dark:text-gray-300 transition-colors">
             Tím, že vyloučíme prostředníky, zajišťujeme, že naše pobřežní partneři jsou spravedlivě placeni za svou tvrdou práci, a vy
             dostanete nejčerstvější úlovek možný.
           </p>
-          <div className="flex items-center gap-4 font-bold text-[#006a65]">
+          <div className="flex items-center gap-4 font-bold text-[#006a65] dark:text-[#6ff7ee] transition-colors">
             <span className="material-symbols-outlined text-3xl">verified</span>
             100% Dohledatelný úlovky
           </div>
         </div>
 
-        <div className="w-full md:w-1/2">
-          <div className="relative aspect-square overflow-hidden rounded-3xl shadow-2xl shadow-black/10">
-            <div className="absolute inset-x-0 bottom-0 top-1/2 z-10 bg-gradient-to-t from-black/60 to-transparent" />
+        <div className="w-full md:w-1/2" data-aos="fade-left" data-aos-delay="200">
+          <div className="relative aspect-square overflow-hidden rounded-3xl shadow-2xl shadow-black/10 dark:shadow-black/50 transition-shadow duration-500 hover:shadow-[#006a65]/20 dark:hover:shadow-[#6ff7ee]/20">
+            <div className="absolute inset-x-0 bottom-0 top-1/2 z-10 bg-gradient-to-t from-black/80 to-transparent" />
             <img
               src="https://i.ibb.co/hxFQxVjV/matej.png"
               alt="Rybář stojící na molu se sítěmi"
-              className="h-full w-full object-cover object-top"
+              className="h-full w-full object-cover object-top transition-transform duration-1000 hover:scale-105"
             />
-            <div className="absolute bottom-6 left-6 z-20">
+            <div className="absolute bottom-6 left-6 z-20" data-aos="fade-up" data-aos-delay="400">
               <h2 className="text-xl font-bold text-white">Denis Hřešníček</h2>
               <p className="text-sm text-white/80">Velmi schopný rybář a aktivní student</p>
             </div>
@@ -39,12 +39,12 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="rounded-t-3xl bg-[#eff5f3] py-24">
+      <section className="rounded-t-3xl bg-[#eff5f3] dark:bg-gray-900 py-24 transition-colors">
         <div className="mx-auto max-w-7xl px-6 md:px-8">
-          <div className="mb-16 text-center">
-            <h2 className="text-3xl font-black tracking-tight md:text-5xl">Naše zásady</h2>
+          <div className="mb-16 text-center" data-aos="fade-up">
+            <h2 className="text-3xl font-black tracking-tight dark:text-white md:text-5xl transition-colors">Naše zásady</h2>
           </div>
-          <div className="grid grid-cols-1 gap-16 text-center md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-16 text-center md:grid-cols-3" data-aos="fade-up" data-aos-delay="200">
             <ValueCard icon="set_meal" title="Udržitelný lov" color="primary">
               Žádné vlečné sítě při dně. Žádné nadměrně lovené druhy. Jen ryby ulovené na udici nebo z udržitelných chovů, které respektují mořské ekosystémy.
             </ValueCard>
