@@ -286,6 +286,5 @@ const navClass = ({ isActive }: { isActive: boolean }) =>
 const mobileNavClass = ({ isActive }: { isActive: boolean }) =>
   `${isActive ? 'bg-[#6ff7ee]/20 font-bold text-[#0f766e] dark:text-[#6ff7ee]' : 'text-[#134e4a]/70 dark:text-gray-300'} rounded-xl px-4 py-3 text-sm transition-colors hover:bg-[#6ff7ee]/20 dark:hover:bg-gray-700 focus-visible:ring-2 focus-visible:ring-[#006a65]`
 
-const linkClass = 'text-sm font-medium tracking-tight text-[#134e4a]/70 dark:text-gray-300 transition-colors hover:text-[#a43c12] dark:hover:text-[#fe7e4f] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#006a65] rounded-sm'
 const mobileLinkClass = 'rounded-xl px-4 py-3 text-sm text-[#134e4a]/70 dark:text-gray-300 transition-colors hover:bg-[#6ff7ee]/20 dark:hover:bg-gray-700 hover:text-[#0f766e] dark:hover:text-[#6ff7ee] focus-visible:ring-2 focus-visible:ring-[#006a65]'
 const footerLinkClass = 'text-xs uppercase tracking-[0.24em] text-[#134e4a]/60 dark:text-gray-400 opacity-80 transition-opacity hover:underline hover:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#006a65] rounded-sm'
