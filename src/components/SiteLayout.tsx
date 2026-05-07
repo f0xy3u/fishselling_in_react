@@ -116,9 +116,6 @@ export function SiteLayout() {
             <NavLink to="/about" className={navClass}>
               O našich rybářích
             </NavLink>
-            <a href="/#newsletter" className={linkClass}>
-              Novinky
-            </a>
           </nav>
 
           <div className="flex items-center gap-3">
