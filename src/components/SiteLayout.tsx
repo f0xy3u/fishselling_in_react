@@ -183,7 +183,7 @@ export function SiteLayout() {
         <Outlet context={outletContext} />
       </main>
 
-      <footer className="mt-20 rounded-t-[3rem] bg-[#d9f99d] dark:bg-[#11302e] transition-colors">
+      <footer className="mt-20 rounded-t-[3rem] bg-[#D1FAE4] dark:bg-[#11302e] transition-colors">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-8 py-16 text-center md:flex-row md:px-12 md:text-left">
           <div className="text-xl font-bold text-[#134e4a] dark:text-[#6ff7ee]">Fin & Gill</div>
           <nav className="flex flex-wrap justify-center gap-8" aria-label="Navigace v patičce">
